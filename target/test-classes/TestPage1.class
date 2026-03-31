@@ -1,0 +1,9 @@
+public class TestPage1{
+
+public void launchBrowser(){
+WebDriver driver=new ChromiumDriver();
+driver.getURL("https://www.amazon.in/");
+}
+
+
+}

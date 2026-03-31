@@ -9,10 +9,10 @@ import io.cucumber.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 	    features = "src/test/resources/Features",
-	    glue = "StepDefinitions",
+	    glue = {"StepDefinitions","Hooks"},
 	    tags="@title",
 	    plugin = {"pretty", "html:target/cucumber-reports.html"},
-	    dryRun= true
+	    dryRun= false
 	)
 public class TestRunner {
 	
