@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CucumberSuite" verbose="1">
+
+    <test name="MainRun">
+        <classes>
+            <class name="TestRunner.TestRunner"/>
+        </classes>
+    </test>
+
+    <test name="RetryRun">
+        <classes>
+            <class name="TestRunner.RetryRunner"/>
+        </classes>
+    </test>
+
+</suite>

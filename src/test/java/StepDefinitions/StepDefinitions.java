@@ -39,9 +39,32 @@ public class StepDefinitions extends BaseClass {
 	    } 
 	}
 	
+	@When("Click on location pincode")
+	public void click_on_location_pincode() {
+	   test1.clickPinCode();
+	}
+	@Then("verify choose your location popup")
+	public void verify_choose_your_location_popup() {
+	    test1.verifyChooseYourLocation();
+	}
+	@When("click on the address {string}")
+	public void click_on_the_address(String string) {
+	    test1.clickLocation(string);
+	}
+	@Then("Verify the current location and pincode {string}")
+	public void verify_the_current_location_and_pincode(String string) {
+	   test1.verifyLocation(string);
+	}
 
-
-
+	@When("click on enter the pincode and enter {string}")
+	public void click_on_enter_the_pincode_and_enter(String string) {
+		test1.enterPincode(string);
+	}
+	
+	@Then("Click on Apply button")
+	public void Click_on_Apply_button() {
+		test1.clickApply();
+	}
 
 
 }

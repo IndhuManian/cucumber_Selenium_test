@@ -1,4 +1,4 @@
-POM\HomePage.class
 StepDefinitions\StepDefinitions.class
-BasePackage\BaseClass.class
 TestRunner\TestRunner.class
+POM\HomePage.class
+BasePackage\BaseClass.class
